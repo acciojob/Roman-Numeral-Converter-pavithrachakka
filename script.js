@@ -10,7 +10,14 @@ function convertToRoman(num) {
     };
 
   //your code here
-
+	let r='';
+	for(let [roman,value] of map){
+		while (num>=value){
+			r+=roman;
+			num-=value;
+		}
+	}
+	return r;
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
