@@ -8,7 +8,7 @@ function convertToRoman(num) {
       5:['V', 5], 
       6:['I', 1]
     };
-	const romanmap={
+	const romanMap=[
 		['M',1000],
 		['CM',900],
 		['D',500],
@@ -22,7 +22,7 @@ function convertToRoman(num) {
 		['V',5],
 		['IV',4],
 		['I',1]
-	};
+	];
 
   //your code here
 	let r='';
