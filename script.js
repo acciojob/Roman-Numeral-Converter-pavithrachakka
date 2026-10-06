@@ -8,12 +8,27 @@ function convertToRoman(num) {
       5:['V', 5], 
       6:['I', 1]
     };
+	const romanmap={
+		['M',1000],
+		['CM',900],
+		['D',500],
+		['CD',400],
+		['C',100],
+		['XC',90],
+		['L',50],
+		['XL',40],
+		['X',10],
+		['IX',9],
+		['V',5],
+		['IV',4],
+		['I',1]
+	};
 
   //your code here
 	let r='';
-	for(let [roman,value] of map){
+	for(let [letter,value] of romanMap){
 		while (num>=value){
-			r+=roman;
+			r+=letter;
 			num-=value;
 		}
 	}
